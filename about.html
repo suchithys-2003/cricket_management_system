@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About Us Page </title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+#aboutUs {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#aboutUs img {
+    width: 500px;
+    /* margin: 20px; */
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.content h2 {
+    font-size: 50px;
+    color: #ffca70;
+}
+
+.content h4 {
+    font-size: 20px;
+    color: #fff;
+    /* margin: 10px 0; */
+    margin-top: 20px;
+}
+
+.description {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+    font-weight: bold;
+    border: 2px solid #ffca70;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    background-color: #ffca70;
+    color: white;
+}
+
+.btn:hover  {
+    border: 2px solid #ffca70;
+    background: transparent;
+    color: white;
+}
+
+@media screen and (max-width: 790px) {
+    #aboutUs img {
+        width: 80%;
+    }
+
+    #aboutUs {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="transition transition-2 is-active"></div>
+    <section id="aboutUs">
+        <img src="logo.jpg" alt="computer user"> 
+        <div class="content">
+            <h2>About Us</h2>
+            <h4> CRICKET DATABASE MANAGEMENT SYSTEM </h4>
+            <p class="description">
+                "Welcome to our Cricket Database Management System (CDMS)! At CDMS, we are passionate about revolutionizing the way cricket data is managed and analyzed.
+                 Our team of dedicated developers and cricket enthusiasts have collaborated to create a comprehensive platform tailored specifically for cricket organizations, teams, and enthusiasts.
+                  With CDMS, users can efficiently store, organize, and retrieve a wide range of cricket-related data, including player statistics, match results, team information, and more. 
+                  Our goal is to provide cricket stakeholders with powerful tools to streamline their operations, make informed decisions, and ultimately enhance their experience within the dynamic world of cricket.
+                 Join us on this exciting journey as we redefine cricket data management!"   
+            </p>
+            <h2 style="font-size: 20px;">Contact</h2>
+            <h4 style="margin-top: 10px;">9988012345</h4>
+            <button class="btn" style="margin-top: 15px;"><a href="Main.html" style="text-decoration: none; color:white;">Back</a></button>
+        </div>
+    </section>
+
+</body>
+</html>

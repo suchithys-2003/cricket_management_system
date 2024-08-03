@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete stadium</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url(aksh-yadav-bY4cqxp7vos-unsplash\ \(1\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 200px auto;
+            padding: 20px;
+            background-color: wheat;
+            border-radius: 20px;
+            box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+            /* Adding shadow effect */
+            animation: slideFromLeft 1s ease;
+        }
+
+        @keyframes slideFromLeft {
+            from {
+                margin-left: -100%;
+            }
+            to {
+                margin-left: 0;
+            }
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: black;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input[type="name"] {
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid black;
+            color: black;
+        }
+
+        input[type="submit"] {
+            background-color: lightcoral;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: cadetblue;
+        }
+
+        button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: green;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            float: right;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button><a href="admindash.html">Back</a></button>
+    <h2>Delete stadium</h2>
+    <div>
+        <form action="delete_stadium.php" method="post">
+            <table style="text-align: center;">
+                <tr>
+                    <td style="font-size: 25px;"><label for="playername">Enter stadium name:</label></td>
+                    <td><input type="name" name="stadium_name" id="stadium_name"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"style="text-align: center;">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>

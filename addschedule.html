@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url(img/batball.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    border-radius: 20px;
+    background-color: lightslategray;
+    padding: 25px;
+    box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin-left: 15%;
+    animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    color:white;
+    font-size: 25px;
+    animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+input[type=text], input[type=number], input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 20px;
+    color: black;
+}
+
+input[type=submit] {
+    background-color:burlywood;
+    color: black;
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    margin-left: 35%;
+}
+
+input[type=submit]:hover {
+    background-color:lightcoral;
+}
+
+button {
+    background-color:lightcoral;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: cadetblue;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+
+th {
+    background-color: cadetblue;
+}
+</style>
+</head>
+<body>
+<button><a href="admindash.html">Back</a></button>
+<h3>Add Schedule</h3>
+<div class="container">
+  <form action="addschedule.php" method="post">
+
+    <label for="team1">Team1 Name</label>
+    <input type="text" name="team1" placeholder="e.g., SRH.." required>
+
+    <label for="team2">Team2 Name</label>
+    <input type="text" name="team2" placeholder="e.g., MI.." required>
+
+    <label for="date">Date</label>
+    <input type="date" name="date" placeholder="Date.." required>
+
+    <label for="match_no">Match No</label>
+    <input type="number" name="match_no" placeholder="Match number.." required>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>

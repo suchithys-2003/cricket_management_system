@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url(aksh-yadav-bY4cqxp7vos-unsplash\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    border-radius: 20px;
+    background-color:lightslategray;
+    padding: 25px;
+    box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: 20px auto;
+    animation: slideIn 0.5s forwards;
+    border: 1px solid black;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-top: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type="text"], input[type="number"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+input[type="submit"], button {
+    background-color: lightseagreen;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    margin-left: 35%;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: lightcoral;
+}
+
+button {
+    background-color: lightseagreen;
+    width: auto;
+    float: right;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    background-color:lightcoral;
+}
+</style>
+</head>
+<body>
+<button><a href="admindash.html">Back</a></button>
+<h3 style="margin-left: 40%;">Add Stadium</h3>
+
+<div class="container">
+  <form action="addstadium.php" method="post">
+
+
+    <label for="stadium_name">Stadium Name</label>
+    <input type="text" name="stadium_name" placeholder="Enter Stadium Name.." required>
+
+    <label for="board_name">Board Name</label>
+    <input type="text" name="board_name" placeholder="Board Name.." required>
+
+    <label for="team">Team</label>
+    <input type="text" name="team" placeholder="Team.." required>
+
+    <label for="capacity">Capacity</label>
+    <input type="number" name="capacity" placeholder="Capacity of Stadium.." required>
+
+    <input type="submit" value="Submit">
+   
+  
+  </form>
+</div>
+
+</body>
+</html>
